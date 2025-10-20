@@ -1,0 +1,167 @@
+<div class="container-fluid">
+  <div>
+    <div class="row product-page-main p-0">
+      <div class="col-xxl-12 box-col-6 order-xxl-0 order-1">
+        <div class="card">
+
+          <div class="card-body">
+            <div class="product-page-details">
+              <h3>Virtual Wallet</h3>
+            </div>
+          
+            <ul class="product-color">
+              <li class="bg-primary"></li>
+              <li class="bg-secondary"></li>
+              <li class="bg-success"></li>
+              <li class="bg-info"></li>
+              <li class="bg-warning"></li>
+            </ul>
+            <div>
+              <table class="product-page-width">
+                <tbody>
+                  <tr>
+                    <td><b>Username &nbsp;&nbsp;&nbsp;:</b></td>
+                    <td>sarra1998</td>
+                  </tr>
+                  <tr>
+                    <td><b>Email &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;</b></td>
+                    <td class="txt-success">{{'sarra.chahab@esprit.tn'}}</td>
+                  </tr>
+                  <tr>
+                    <td><b>Phone &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;</b></td>
+                    <td>+216 56 558 402 </td>
+                  </tr>
+                  <tr>
+                    <td><b>Role &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;</b></td>
+                    <td>Client</td>
+                  </tr>
+                  <tr>
+                    <td><b>Encrypted Wallet ID &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;</b></td>
+                    <td>$2a$10$JCxapY2cPxss3velnl5Y0uaYKK4DTioyJ94sAYEmc4duVA.LFndce</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-4">
+                <h6 class="product-title">Total Value</h6>
+              </div>
+              <div class="col-md-8">
+                <div class="d-flex">
+                  <span>7851256</span>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-4">
+                <h6 class="product-title">Liquidity</h6>
+              </div>
+              <div class="col-md-8">
+                <div class="d-flex">
+                  <span>5788</span>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="m-t-15 btn-showcase">
+              <a class="btn btn-primary" type="button" title=""><i class="fa fa-paper-plane me-1"></i>Send</a>
+              <a class="btn btn-success" type="button" title=""><i class="fa fa-arrow-down me-1"></i>Withdraw</a>
+              <a class="btn btn-secondary" href="javascript:void(0);"><i class="fa fa-arrow-circle-up me-1"></i> Reload</a>
+              <button  class="btn btn-danger" title="Delete">
+                <i class="fa fa-trash me-1"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="justify-content:space-around;">
+        <div class="card" style="width: 40%;">
+        <div class="card-body">
+          <div class="product-page-details">
+          <h4>Create Wallet</h4>
+          <form (ngSubmit)="createPortefeuille(createForm.value)" #createForm="ngForm">
+            <div class="form-group">
+              <label for="totalValue">Total Value</label>
+              <input
+                type="number"
+                id="totalValue"
+                class="form-control"
+                name="totalValue"
+                ngModel
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="liquidity">Liquidity</label>
+              <input
+                type="number"
+                id="liquidity"
+                class="form-control"
+                name="liquidity"
+                ngModel
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="portefeuilleId">Wallet ID</label>
+              <input
+                type="number"
+                class="form-control"
+                name="encryptedWalletId"
+                ngModel
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Create</button>
+          </form>
+        
+       </div></div></div>
+       <div class="card" style="width: 40%;">
+       <div class="card-body">
+        <div class="product-page-details">
+          <h4>Edit Wallet</h4>
+          <form (ngSubmit)="updatePortefeuille(idPortefeuille, updateForm.value)" #updateForm="ngForm">
+            <div class="form-group">
+              <label for="portefeuilleId">Wallet ID</label>
+              <input
+                type="number"
+                id="portefeuilleId"
+                class="form-control"
+                [(ngModel)]="encryptedWalletId"
+                name="encryptedWalletId"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="totalValue">Total Value</label>
+              <input
+                type="number"
+                id="totalValue"
+                class="form-control"
+                name="totalValue"
+                ngModel
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="liquidity">Liquidity</label>
+              <input
+                type="number"
+                id="liquidity"
+                class="form-control"
+                name="liquidity"
+                ngModel
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-success" style="margin-top: 10px;">Update</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+   
+  </div>
+</div>

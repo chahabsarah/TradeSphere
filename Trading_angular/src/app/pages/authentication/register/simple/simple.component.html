@@ -1,0 +1,84 @@
+<div class="container-fluid p-0"> 
+  <div class="row">
+    <div class="col-12">     
+      <div class="login-card login-dark">
+        <div>
+          <div class="login-main"> 
+            <form class="theme-form" (submit)="onSignup()">
+              <h4>
+                Créer un compte 
+                <img class="img-fluid for-light" src="assets/images/logo/logo.png" alt="loginpage" style="width: 80px;">
+              </h4>
+              <p>Entrez vos informations personnelles pour créer un compte</p>
+
+              <div class="row">
+                <!-- Email -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Email</label>
+                  <input class="form-control" type="email" [(ngModel)]="signupData.email" name="email" required placeholder="app@votreemail.com">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group col-md-6 position-relative">
+                  <label class="col-form-label">Mot de passe</label>
+                  <input class="form-control" [type]="show ? 'text' : 'password'" [(ngModel)]="signupData.password" name="password" required placeholder="*********">
+                  <div class="show-hide" (click)="showPassword()" style="position:absolute; top:38px; right:15px; cursor:pointer;">
+                  </div>
+                </div>
+
+                <!-- Username -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Nom d'utilisateur</label>
+                  <input class="form-control" type="text" [(ngModel)]="signupData.username" name="username" required placeholder="Nom d'utilisateur">
+                </div>
+
+                <!-- Address -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Adresse</label>
+                  <input class="form-control" type="text" [(ngModel)]="signupData.address" name="address" required placeholder="Votre adresse">
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Numéro de téléphone</label>
+                  <input class="form-control" type="text" [(ngModel)]="signupData.phoneNumber" name="phoneNumber" required placeholder="Numéro de téléphone">
+                </div>
+
+                <!-- CIN -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">CIN</label>
+                  <input class="form-control" type="number" [(ngModel)]="signupData.cin" name="cin" required placeholder="CIN">
+                </div>
+
+                <!-- Birth date -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Date de naissance</label>
+                  <input class="form-control" type="date" [(ngModel)]="signupData.datedenaissance" name="datedenaissance" required>
+                </div>
+
+                <!-- Role -->
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Rôle</label>
+                  <select class="form-control" [(ngModel)]="signupData.role" name="role" required>
+                    <option value="ADMIN">ADMIN</option>
+                    <option value="CLIENT">CLIENT</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group mb-0 mt-3">
+                <button class="btn btn-primary d-block w-100" type="submit">Créer un compte</button>
+              </div>
+
+              <p class="mt-4 mb-0 text-center">
+                Vous avez déjà un compte ? 
+                <a class="ms-2" [routerLink]="'/authentication/login/simple'">Se connecter</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

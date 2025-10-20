@@ -1,0 +1,43 @@
+<div class="container-fluid credit-card">
+  <div class="row">
+
+    <div class="col-xl-12 col-lg-12 box-col-12">
+      <div class="card">
+        <div class="card-header py-4">
+          <h5>Send</h5>
+        </div>
+        <div class="card-body">
+          <form class="theme-form row"(submit)="envoyerDollar()">
+            <div class="mb-3 col-12 p-r-0">
+              <input class="form-control" type="text" placeholder="Wallet ID" id="walletId" [(ngModel)]="transactionRequest.encryptedWalletId"  name="walletId" required>
+            </div>
+            <div class="mb-3 col-12">
+              <input class="form-control"  type="number" id="amount" [(ngModel)]="transactionRequest.amount" name="amount" required>
+            </div>
+            <div class="mb-3 col-12">
+              <select class="form-control" id="cryptoCurrency" [(ngModel)]="transactionRequest.cryptoCurrency" name="cryptoCurrency" required>
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="LTC">Litecoin (LTC)</option>
+                <option value="XRP">Ripple (XRP)</option>
+              </select>
+      
+            </div>
+
+            <!-- <div class="mb-3 col-12">
+              <ul class="payment-opt">
+                <li><img src="assets/images/ecommerce/mastercard.png" alt=""></li>
+                <li><img src="assets/images/ecommerce/visa.png" alt=""></li>
+                <li><img src="assets/images/ecommerce/paypal.png" alt=""></li>
+              </ul>
+            </div> -->
+            <div class="col-12">
+              <button class="btn btn-primary btn-block" type="submit"title="">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
