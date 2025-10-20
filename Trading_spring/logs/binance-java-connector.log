@@ -1,0 +1,512 @@
+2025-10-20 16:52:36.866[1760975556866] | INFO  | background-preinit | o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-20 16:52:36.947[1760975556947] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - Starting FundsphereApplication using Java 17.0.8 with PID 20092 (C:\Users\sarra\OneDrive\Bureau\Disk\Trading\Trading_spring\target\classes started by sarra in C:\Users\sarra\OneDrive\Bureau\Disk\Trading\Trading_spring)
+2025-10-20 16:52:36.948[1760975556948] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 16:52:37.020[1760975557020] | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20 16:52:37.020[1760975557020] | INFO  | restartedMain | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20 16:52:38.671[1760975558671] | INFO  | restartedMain | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20 16:52:38.786[1760975558786] | INFO  | restartedMain | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 11 JPA repository interfaces.
+2025-10-20 16:52:39.621[1760975559621] | INFO  | restartedMain | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8084 (http)
+2025-10-20 16:52:39.632[1760975559632] | INFO  | restartedMain | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:52:39.635[1760975559635] | INFO  | restartedMain | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2025-10-20 16:52:39.635[1760975559635] | INFO  | restartedMain | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-10-20 16:52:39.723[1760975559723] | INFO  | restartedMain | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2025-10-20 16:52:39.724[1760975559724] | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2702 ms
+2025-10-20 16:52:39.891[1760975559891] | INFO  | restartedMain | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20 16:52:39.984[1760975559984] | INFO  | restartedMain | org.hibernate.Version                - HHH000412: Hibernate ORM core version 6.2.20.Final
+2025-10-20 16:52:39.989[1760975559989] | INFO  | restartedMain | org.hibernate.cfg.Environment        - HHH000406: Using bytecode reflection optimizer
+2025-10-20 16:52:40.360[1760975560360] | INFO  | restartedMain | o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20 16:52:40.396[1760975560396] | INFO  | restartedMain | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Starting...
+2025-10-20 16:52:40.925[1760975560925] | INFO  | restartedMain | com.zaxxer.hikari.pool.HikariPool    - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63fddcfd
+2025-10-20 16:52:40.927[1760975560927] | INFO  | restartedMain | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Start completed.
+2025-10-20 16:52:42.483[1760975562483] | INFO  | restartedMain | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20 16:52:42.677[1760975562677] | INFO  | restartedMain | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20 16:52:42.975[1760975562975] | INFO  | restartedMain | o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-20 16:52:43.917[1760975563917] | WARN  | restartedMain | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20 16:52:44.214[1760975564214] | INFO  | restartedMain | o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@298ffda3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e8fb2b2, org.springframework.security.web.context.SecurityContextHolderFilter@6d7a8d42, org.springframework.security.web.header.HeaderWriterFilter@6e7e1d17, org.springframework.web.filter.CorsFilter@15043044, org.springframework.security.web.authentication.logout.LogoutFilter@1e3fcc4b, tn.esprit.fundsphere.security.jwt.AuthTokenFilter@2a9abb8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b7e69c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37d31349, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67796a9c, org.springframework.security.web.access.ExceptionTranslationFilter@47752d12, org.springframework.security.web.access.intercept.AuthorizationFilter@247e652d]
+2025-10-20 16:52:44.533[1760975564533] | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer   - LiveReload server is running on port 35729
+2025-10-20 16:52:44.554[1760975564554] | INFO  | restartedMain | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:52:44.577[1760975564577] | INFO  | restartedMain | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8084 (http) with context path ''
+2025-10-20 16:52:44.589[1760975564589] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - Started FundsphereApplication in 8.089 seconds (process running for 10.358)
+2025-10-20 16:53:24.095[1760975604095] | ERROR | scheduling-1 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.web.client.HttpServerErrorException: 522 <none>: "error code: 522"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:122)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:137)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:864)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:378)
+	at tn.esprit.fundsphere.Scraping.AlphaVantageService.fetchAndSaveStockData(AlphaVantageService.java:33)
+	at tn.esprit.fundsphere.Scraping.StockDataScheduler.scheduleStockDataFetch(StockDataScheduler.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-10-20 16:54:34.569[1760975674569] | INFO  | File Watcher | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 95 class path changes (0 additions, 94 deletions, 1 modification)
+2025-10-20 16:54:34.607[1760975674607] | INFO  | Thread-7   | o.a.coyote.http11.Http11NioProtocol  - Pausing ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:34.607[1760975674607] | INFO  | Thread-7   | o.a.catalina.core.StandardService    - Stopping service [Tomcat]
+2025-10-20 16:54:34.613[1760975674613] | WARN  | Thread-7   | o.a.c.loader.WebappClassLoaderBase   - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
+2025-10-20 16:54:34.614[1760975674614] | INFO  | Thread-7   | o.a.coyote.http11.Http11NioProtocol  - Stopping ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:34.617[1760975674617] | INFO  | Thread-7   | o.a.coyote.http11.Http11NioProtocol  - Destroying ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:34.624[1760975674624] | INFO  | Thread-7   | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20 16:54:34.630[1760975674630] | INFO  | Thread-7   | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown initiated...
+2025-10-20 16:54:34.643[1760975674643] | INFO  | Thread-7   | com.zaxxer.hikari.HikariDataSource   - HikariPool-1 - Shutdown completed.
+2025-10-20 16:54:34.768[1760975674768] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - Starting FundsphereApplication using Java 17.0.8 with PID 20092 (C:\Users\sarra\OneDrive\Bureau\Disk\Trading\Trading_spring\target\classes started by sarra in C:\Users\sarra\OneDrive\Bureau\Disk\Trading\Trading_spring)
+2025-10-20 16:54:34.768[1760975674768] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 16:54:35.139[1760975675139] | INFO  | restartedMain | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20 16:54:35.140[1760975675140] | INFO  | restartedMain | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-10-20 16:54:35.297[1760975675297] | INFO  | restartedMain | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8084 (http)
+2025-10-20 16:54:35.298[1760975675298] | INFO  | restartedMain | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:35.298[1760975675298] | INFO  | restartedMain | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2025-10-20 16:54:35.299[1760975675299] | INFO  | restartedMain | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-10-20 16:54:35.337[1760975675337] | INFO  | restartedMain | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2025-10-20 16:54:35.337[1760975675337] | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 566 ms
+2025-10-20 16:54:35.396[1760975675396] | INFO  | restartedMain | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20 16:54:35.409[1760975675409] | INFO  | restartedMain | o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20 16:54:35.410[1760975675410] | INFO  | restartedMain | com.zaxxer.hikari.HikariDataSource   - HikariPool-2 - Starting...
+2025-10-20 16:54:35.435[1760975675435] | INFO  | restartedMain | com.zaxxer.hikari.pool.HikariPool    - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ac23a1e
+2025-10-20 16:54:35.436[1760975675436] | INFO  | restartedMain | com.zaxxer.hikari.HikariDataSource   - HikariPool-2 - Start completed.
+2025-10-20 16:54:35.451[1760975675451] | INFO  | restartedMain | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20 16:54:35.452[1760975675452] | INFO  | restartedMain | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20 16:54:35.515[1760975675515] | WARN  | restartedMain | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20 16:54:35.732[1760975675732] | WARN  | restartedMain | o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 58108da4-ed37-4fa4-928c-b74f6b3d1401
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-20 16:54:35.780[1760975675780] | INFO  | restartedMain | o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e98c5e0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@300ed8b0, org.springframework.security.web.context.SecurityContextHolderFilter@70edf04a, org.springframework.security.web.header.HeaderWriterFilter@6c965816, org.springframework.security.web.csrf.CsrfFilter@22bac505, org.springframework.security.web.authentication.logout.LogoutFilter@6605fa4b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a29d675, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@79046bac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b171d67, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21d6397f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40b91bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@270cc1b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9ad4bb, org.springframework.security.web.access.ExceptionTranslationFilter@3a432ce9, org.springframework.security.web.access.intercept.AuthorizationFilter@257fe953]
+2025-10-20 16:54:35.802[1760975675802] | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer   - LiveReload server is running on port 35729
+2025-10-20 16:54:35.817[1760975675817] | INFO  | restartedMain | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:35.821[1760975675821] | INFO  | restartedMain | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8084 (http) with context path ''
+2025-10-20 16:54:35.833[1760975675833] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - Started FundsphereApplication in 1.12 seconds (process running for 121.601)
+2025-10-20 16:54:35.838[1760975675838] | INFO  | restartedMain | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-10-20 16:54:40.194[1760975680194] | INFO  | File Watcher | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 94 class path changes (94 additions, 0 deletions, 0 modifications)
+2025-10-20 16:54:40.221[1760975680221] | INFO  | Thread-9   | o.a.coyote.http11.Http11NioProtocol  - Pausing ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:40.221[1760975680221] | INFO  | Thread-9   | o.a.catalina.core.StandardService    - Stopping service [Tomcat]
+2025-10-20 16:54:40.222[1760975680222] | INFO  | Thread-9   | o.a.coyote.http11.Http11NioProtocol  - Stopping ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:40.224[1760975680224] | INFO  | Thread-9   | o.a.coyote.http11.Http11NioProtocol  - Destroying ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:40.226[1760975680226] | INFO  | Thread-9   | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20 16:54:40.227[1760975680227] | INFO  | Thread-9   | com.zaxxer.hikari.HikariDataSource   - HikariPool-2 - Shutdown initiated...
+2025-10-20 16:54:40.234[1760975680234] | INFO  | Thread-9   | com.zaxxer.hikari.HikariDataSource   - HikariPool-2 - Shutdown completed.
+2025-10-20 16:54:40.326[1760975680326] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - Starting FundsphereApplication using Java 17.0.8 with PID 20092 (C:\Users\sarra\OneDrive\Bureau\Disk\Trading\Trading_spring\target\classes started by sarra in C:\Users\sarra\OneDrive\Bureau\Disk\Trading\Trading_spring)
+2025-10-20 16:54:40.328[1760975680328] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 16:54:40.862[1760975680862] | INFO  | restartedMain | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-20 16:54:40.906[1760975680906] | INFO  | restartedMain | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 11 JPA repository interfaces.
+2025-10-20 16:54:41.052[1760975681052] | INFO  | restartedMain | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8084 (http)
+2025-10-20 16:54:41.052[1760975681052] | INFO  | restartedMain | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:41.053[1760975681053] | INFO  | restartedMain | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2025-10-20 16:54:41.053[1760975681053] | INFO  | restartedMain | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-10-20 16:54:41.080[1760975681080] | INFO  | restartedMain | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2025-10-20 16:54:41.080[1760975681080] | INFO  | restartedMain | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 750 ms
+2025-10-20 16:54:41.129[1760975681129] | INFO  | restartedMain | o.h.jpa.internal.util.LogHelper      - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-20 16:54:41.143[1760975681143] | INFO  | restartedMain | o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-20 16:54:41.144[1760975681144] | INFO  | restartedMain | com.zaxxer.hikari.HikariDataSource   - HikariPool-3 - Starting...
+2025-10-20 16:54:41.161[1760975681161] | INFO  | restartedMain | com.zaxxer.hikari.pool.HikariPool    - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dc921b
+2025-10-20 16:54:41.161[1760975681161] | INFO  | restartedMain | com.zaxxer.hikari.HikariDataSource   - HikariPool-3 - Start completed.
+2025-10-20 16:54:41.419[1760975681419] | INFO  | restartedMain | o.h.e.t.j.p.i.JtaPlatformInitiator   - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-20 16:54:41.493[1760975681493] | INFO  | restartedMain | o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20 16:54:42.017[1760975682017] | WARN  | restartedMain | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-20 16:54:42.151[1760975682151] | INFO  | restartedMain | o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15cfc92b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ee2d8ef, org.springframework.security.web.context.SecurityContextHolderFilter@e34922f, org.springframework.security.web.header.HeaderWriterFilter@7408cde6, org.springframework.web.filter.CorsFilter@64ee4d8b, org.springframework.security.web.authentication.logout.LogoutFilter@3ace3508, tn.esprit.fundsphere.security.jwt.AuthTokenFilter@48a12212, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d138352, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2294e69c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76d0d24d, org.springframework.security.web.access.ExceptionTranslationFilter@4d484804, org.springframework.security.web.access.intercept.AuthorizationFilter@ed39fe4]
+2025-10-20 16:54:42.310[1760975682310] | INFO  | restartedMain | o.s.b.d.a.OptionalLiveReloadServer   - LiveReload server is running on port 35729
+2025-10-20 16:54:42.330[1760975682330] | INFO  | restartedMain | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8084"]
+2025-10-20 16:54:42.335[1760975682335] | INFO  | restartedMain | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8084 (http) with context path ''
+2025-10-20 16:54:42.343[1760975682343] | INFO  | restartedMain | t.e.fundsphere.FundsphereApplication - Started FundsphereApplication in 2.05 seconds (process running for 128.112)
+2025-10-20 16:54:42.346[1760975682346] | INFO  | restartedMain | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userDetailsServiceImpl and found beans of type 'org.springframework.security.authentication.AuthenticationProvider' authenticationProvider (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-10-20 16:56:17.028[1760975777028] | ERROR | scheduling-1 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.web.client.HttpServerErrorException: 525 <none>: "error code: 525"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:122)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:137)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:864)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:378)
+	at tn.esprit.fundsphere.Scraping.AlphaVantageService.fetchAndSaveStockData(AlphaVantageService.java:33)
+	at tn.esprit.fundsphere.Scraping.StockDataScheduler.scheduleStockDataFetch(StockDataScheduler.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-10-20 17:27:29.693[1760977649693] | INFO  | http-nio-8084-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20 17:27:29.696[1760977649696] | INFO  | http-nio-8084-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2025-10-20 17:27:29.720[1760977649720] | INFO  | http-nio-8084-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 23 ms
+2025-10-20 17:27:29.875[1760977649875] | ERROR | http-nio-8084-exec-2 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:27:29Z, a difference of 24684798873 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:27:29.884[1760977649884] | ERROR | http-nio-8084-exec-2 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:27:32.275[1760977652275] | ERROR | http-nio-8084-exec-3 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:27:32Z, a difference of 24684801275 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:27:32.276[1760977652276] | ERROR | http-nio-8084-exec-3 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:32:11.018[1760977931018] | ERROR | http-nio-8084-exec-6 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:32:11Z, a difference of 24685080018 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:32:11.019[1760977931019] | ERROR | http-nio-8084-exec-6 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:12.965[1760977992965] | ERROR | http-nio-8084-exec-9 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:12Z, a difference of 24685141965 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:12.966[1760977992966] | ERROR | http-nio-8084-exec-9 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:15.300[1760977995300] | ERROR | http-nio-8084-exec-10 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:15Z, a difference of 24685144299 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:15.301[1760977995301] | ERROR | http-nio-8084-exec-10 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:26.225[1760978006225] | ERROR | http-nio-8084-exec-2 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:26Z, a difference of 24685155225 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:26.225[1760978006225] | ERROR | http-nio-8084-exec-2 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:36.913[1760978016913] | ERROR | http-nio-8084-exec-4 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:36Z, a difference of 24685165912 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:36.914[1760978016914] | ERROR | http-nio-8084-exec-4 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:37.803[1760978017803] | ERROR | http-nio-8084-exec-5 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:37Z, a difference of 24685166802 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:37.803[1760978017803] | ERROR | http-nio-8084-exec-5 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:56.908[1760978036908] | ERROR | http-nio-8084-exec-7 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:56Z, a difference of 24685185908 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:56.909[1760978036909] | ERROR | http-nio-8084-exec-7 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:33:59.516[1760978039516] | ERROR | http-nio-8084-exec-8 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:33:59Z, a difference of 24685188516 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:33:59.518[1760978039518] | ERROR | http-nio-8084-exec-8 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:34:14.203[1760978054203] | ERROR | http-nio-8084-exec-10 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:34:14Z, a difference of 24685203202 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:34:14.204[1760978054204] | ERROR | http-nio-8084-exec-10 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:50:50.428[1760979050428] | ERROR | http-nio-8084-exec-4 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:50:50Z, a difference of 24686199425 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:50:50.428[1760979050428] | ERROR | http-nio-8084-exec-5 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:50:50Z, a difference of 24686199425 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:50:50.429[1760979050429] | ERROR | http-nio-8084-exec-4 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:50:50.430[1760979050430] | ERROR | http-nio-8084-exec-5 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 17:50:57.853[1760979057853] | ERROR | http-nio-8084-exec-7 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T16:50:57Z, a difference of 24686206853 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 17:50:57.854[1760979057854] | ERROR | http-nio-8084-exec-7 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 18:09:30.027[1760980170027] | ERROR | http-nio-8084-exec-1 | tn.esprit.fundsphere.utils.JwtUtils  - JWT token is expired: JWT expired at 2025-01-07T23:34:11Z. Current time: 2025-10-20T17:09:30Z, a difference of 24687319026 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-10-20 18:09:30.029[1760980170029] | ERROR | http-nio-8084-exec-1 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 18:13:24.154[1760980404154] | ERROR | http-nio-8084-exec-10 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-471144c82c9sm239071465e9.14 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:979)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:890)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:794)
+	at jakarta.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:437)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356)
+	at tn.esprit.fundsphere.Services.UserService.EmailService.sendEmail(EmailService.java:56)
+	at tn.esprit.fundsphere.Services.UserService.OtpService.sendOtpToUser(OtpService.java:37)
+	at tn.esprit.fundsphere.Controllers.UserRestController.AuthController.authenticateUser(AuthController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at tn.esprit.fundsphere.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-10-20 18:13:24.175[1760980404175] | ERROR | http-nio-8084-exec-10 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 18:13:53.681[1760980433681] | ERROR | http-nio-8084-exec-2 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-427f00ce586sm16435576f8f.49 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:979)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:890)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:794)
+	at jakarta.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:437)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356)
+	at tn.esprit.fundsphere.Services.UserService.EmailService.sendEmail(EmailService.java:56)
+	at tn.esprit.fundsphere.Services.UserService.OtpService.sendOtpToUser(OtpService.java:37)
+	at tn.esprit.fundsphere.Controllers.UserRestController.AuthController.authenticateUser(AuthController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at tn.esprit.fundsphere.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-10-20 18:13:53.685[1760980433685] | ERROR | http-nio-8084-exec-2 | t.e.f.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2025-10-20 18:16:21.347[1760980581347] | INFO  | SpringApplicationShutdownHook | o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-20 18:16:21.353[1760980581353] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-3 - Shutdown initiated...
+2025-10-20 18:16:21.361[1760980581361] | INFO  | SpringApplicationShutdownHook | com.zaxxer.hikari.HikariDataSource   - HikariPool-3 - Shutdown completed.
